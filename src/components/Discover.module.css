@@ -1,0 +1,22 @@
+
+.discoverContainer{
+    background-color: white;
+    color: black;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
+.discoverContainer div{
+    position: relative;
+    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.discoverContainer div p{
+    width: 30%;
+}

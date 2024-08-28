@@ -1,0 +1,57 @@
+/* src/components/Sidebar.module.css */
+
+.sidebar {
+  width: 200px;
+  position: fixed; /* Make the sidebar fixed */
+  top: 0;
+  left: 0;
+  height: auto; /* Full height to cover the viewport */
+  padding: 30px;
+  margin-top: 320px;
+  color: black;
+  background-color: white;
+  overflow-y: auto; /* Add scrolling if the sidebar content overflows */
+}
+  
+.h2{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+  
+  .categoryList,
+  .filterList {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .categoryList li,
+  .filterList li {
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  .categoryList li:hover,
+  .filterList li:hover {
+    color: #0070f3;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+
+  /* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: none;
+    position: relative;
+    height: auto;
+  }
+
+  .productGrid {
+    margin-left: 0;
+  }
+}
